@@ -1,3 +1,10 @@
+/*
+# instanceof Operator
+
+Define a class called `AreaCalculator`.
+Inside it, create a static method that let you calculate the area of the geometric figure passed as parameter.
+The method will let you calculate the square, the rectangle and the circle area.
+*/
 class Square {
   constructor(side) {
     this.side = side;
@@ -18,7 +25,17 @@ class Circle {
 }
 
 class AreaCalculator {
-  // ...
+  static calculate(area){
+    if (area instanceof Square){
+      return area.side*2;
+    }
+    else if (area instanceof Rectangle){
+      return area.width * area.height;
+    }
+    else if (area instanceof Circle){
+      return Math.PI*Math.pow(area.radius,2);
+    }
+  }
 }
 
 const square = new Square(4);

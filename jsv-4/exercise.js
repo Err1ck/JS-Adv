@@ -23,10 +23,28 @@ class Person {
     this._lastName=lastName;
     this._age=age;
   }
-  get fullName(){
-    return this._firstName +" "+ this._lastName
+  get firstName(){
+    return this._firstName;
   }
-  
+  set firstName(x){
+    this._firstName=x;
+  }
+  get lastName(){
+    return this._lastName;
+  }
+  set lastName(y){
+    this._lastName=y;
+  }
+  get age(){
+    return this._age;
+  }
+  set age(z){
+    this._age=z;
+  }
+  get fullName(){
+    return `${this._firstName} ${this._lastName}` 
+  }
+
 }
 
 const person = new Person('Mario', 'Rossi', 25);
