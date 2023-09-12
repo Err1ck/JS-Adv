@@ -1,3 +1,9 @@
+/*
+# JSON methods
+
+Convert the `developer` object into json.
+*/
+
 class Person {
   constructor(id, firstName, lastName, age) {
     this.id = id;
@@ -9,3 +15,5 @@ class Person {
 
 const developer = new Person(1, 'Mario', 'Rossi', 25);
 // Print developer as json object
+
+console.log(JSON.stringify(developer));

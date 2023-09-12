@@ -1,3 +1,9 @@
+/*
+# JSON methods
+
+Create the `fromJson` method that takes in a json as parameter and returns an object of type `Person`.
+*/
+
 class Person {
   constructor(id, firstName, lastName, age) {
     this.id = id;
@@ -8,6 +14,9 @@ class Person {
 
   toJson() {
     return JSON.stringify(this);
+  }
+  static fromJson(json){
+    return JSON.parse(json);
   }
 }
 
