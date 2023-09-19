@@ -20,5 +20,12 @@
 </html>
 
 <script>
-  // code here
+  
+let formInputs = document.querySelectorAll('.form-input');
+
+formInputs.forEach(input => {
+  input.addEventListener('input', () => { });
+  console.log(input.previousElementSibling.textContent, input.value);
+});
+
 </script>

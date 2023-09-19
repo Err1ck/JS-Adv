@@ -3,3 +3,7 @@ const user = {
   name: "John",
   age: 25,
 };
+
+function setItem(){
+  localStorage.setItem("user",JSON.stringify(user));
+}
